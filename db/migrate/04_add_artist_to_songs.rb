@@ -1,2 +1,6 @@
 class AddArtistToSongs < ActiveRecord::Migration[4.2]
-end
+  def change
+    add_column :songs, :genre, :string
+
+  end
+ end
